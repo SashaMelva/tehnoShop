@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+<meta charset="uft-8" author="mel-va">
+<title>DEVISE</title>
+<link rel="stylesheet" href="style\normolize.css">
+<link rel="stylesheet" href="style\style.css">
+<link rel="stylesheet" href="style\authorization.css">
+<link rel="stylesheet" href="style\registration.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="yellow-fon conteiner yellow-catalog"></div>
+    <header class="main-header conteiner registr-header"> 
+            <div class="logo-cont">
+                <a class="main-header-logo">
+                    <img src="svg\main-logo.svg" width height alt="Логотип предприятия">
+                </a> 
+                    <ul class="nav-ul main-nav">
+                        <li class="seahc-li" >
+                            <img src="svg\search.svg" alt="search">
+                            <a href class="search seahc-li">Поиск по сайту</a>
+                        </li>
+                    </ul>
+                    <nav class="header-2 nav nav-header">
+                            <ul class="header-nav-ul nav-ul">
+                                <li><a class="centr-nav-li nav-li-header" href="menu.html">Каталог товаров</a></li>
+                            </ul>
+                            <a class="open-full-nav">
+                                <img class="plus-svg" src="svg\plus.svg" width height alt="Открыть полное меню">
+                            </a> 
+                    </nav>
+                
+            </div>
+            <nav class="main-navigation nav">
+                <ul class="nav-ul main-nav">
+                    <li class="come-li">
+                        <img src="svg\user.svg" alt="user">
+                        <a href="authorization.html">Войти</a>
+                    </li>
+                    <li class="compare-li">
+                        <img src="svg\compare.svg" alt="compare">
+                        <a href="menu.html">Сравнить</a>
+                    </li>
+                    <li class="bascet-li">
+                        <img src="svg\cart.svg" alt="cart">
+                        <a href>Корзина</a>
+                    </li>
+                    
+                </ul>
+                <nav class="header-4 nav nav-header">
+                    <ul class="header-nav-ul nav-ul nav-ul-gred ul-header">
+                        <li><a class="centr-nav-li nav-li-header"href="Web.html">Доставка</a></li>
+                        <li><a class="centr-nav-li nav-li-header"href="Web.html">Гарантия</a></li>
+                        <div></div>
+                        <li><a class="centr-nav-li nav-li-header" href="kontact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+            </nav>
+    </header>
+
+    <main class="page-site">
+        <div class="wrapper-for-login-up">
+            <div class="label-log-up">
+                <p>Регистрация</p>
+            </div>
+
+            <div class="l-login-password">
+                <input type="text" class="l-login-password-margin input" id="userFullName" placeholder="Введите ФИО" pattern="^[а-яА-Я\s-]+$" required> <!--Кириллица, пробелы, дефис |работает-->
+                <input type="text" class="l-login-password-margin input" id="userLogin" placeholder="Введите логин" required pattern="^[a-zA-Z]+$"> <!--Латиница "|работает-->
+                <input type="email" class="l-login-password-margin input" id="userEmail" placeholder="Введите email" maxlength="64" required>
+                <input type="password" class="l-login-password-margin" id="userPassword" placeholder="Введите пароль" required>
+                <input type="password" class="l-login-password-margin" id="userPassword" placeholder="Введите пароль повторно" required>
+                <div>
+                    <input type="checkbox" checked="checked">
+                    <label>Согласие на обработку персональных данных.</label>
+                </div>
+            </div>
+            
+
+            <div class="knopka-flex">
+                <button class="buton-classic">
+                    <div class="button-line">
+                        <a href="userroom.html"><p class="text-btn">Регистрация</p>
+                    </div>
+                </button>
+            </div>
+        
+    </main>
+    
+    <footer class="main-footer ">
+        <div class="conteiner">
+            <nav class=" nav">
+                <figure class="footer-logo">
+                <a class="main-header-logo footer-logo-a" href="Web.html">
+                    <svg width="164" height="36" viewBox="0 0 164 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 1.4C18.96 1.4 22.84 3.00798 25.96 6.224C29.08 9.44002 30.64 13.432 30.64 18.2C30.64 22.968 29.08 26.96 25.96 30.176C22.84 33.392 18.96 35 14.32 35H0.880005V1.4H14.32ZM14.32 27.608C16.976 27.608 19.128 26.752 20.776 25.04C22.424 23.328 23.248 21.048 23.248 18.2C23.248 15.352 22.424 13.072 20.776 11.36C19.128 9.64799 16.976 8.792 14.32 8.792H8.56V27.608H14.32ZM43.12 27.608H56.56V35H35.44V1.4H56.32V8.792H43.12V14.36H55.12V21.656H43.12V27.608ZM69.424 35L58.48 1.4H66.88L74.32 26.12L81.76 1.4H90.16L79.216 35H69.424ZM93.52 1.4H101.2V35H93.52V1.4ZM123.472 35.672C118.448 35.672 114.28 34 110.968 30.656C107.656 27.312 106 23.16 106 18.2C106 13.24 107.656 9.08802 110.968 5.744C114.28 2.39998 118.448 0.728001 123.472 0.728001C126.48 0.728001 129.264 1.42399 131.824 2.816C134.384 4.20801 136.4 6.10399 137.872 8.504L131.248 12.344C130.512 11.032 129.456 10.016 128.08 9.296C126.704 8.576 125.168 8.216 123.472 8.216C120.496 8.216 118.12 9.12799 116.344 10.952C114.568 12.776 113.68 15.192 113.68 18.2C113.68 21.208 114.568 23.624 116.344 25.448C118.12 27.272 120.496 28.184 123.472 28.184C125.168 28.184 126.712 27.816 128.104 27.08C129.496 26.344 130.544 25.336 131.248 24.056L137.872 27.896C136.432 30.296 134.432 32.192 131.872 33.584C129.312 34.976 126.512 35.672 123.472 35.672ZM149.632 27.608H163.072V35H141.952V1.4H162.832V8.792H149.632V14.36H161.632V21.656H149.632V27.608Z" fill="var(--basic-yellow)"/>
+                        </svg>
+                </a> 
+                <p class="text">г. Москва, ул. Строителей, 15</p>
+                </figure>
+                <ul class="nav-ul end-nav">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" fill="var(--basic-yellow)"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" fill="var(--basic-yellow)"/></svg>
+                        <a href=""class="nav-txt">Корзина</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" fill="var(--basic-yellow)"/></svg>
+                        <a href="" class="nav-txt">Сравнить</a>
+                    </li>
+                    
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path  d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" fill="var(--basic-yellow)"/></svg>
+                        <a href="" class="nav-txt">Войти</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <nav class="centr-nav nav">
+                <div></div>
+                <ul class="centr-nav-ul nav-ul">
+                    <li><a class="centr-nav-li"href="Web.html">Доставка</a></li>
+                    <li><a class="centr-nav-li"href="Web.html">Гарантия</a></li>
+                    <li><a class="centr-nav-li" href="kontact.html">Контакты</a></li>
+                </ul>
+                <p class="text telefon">Тел.: +7 (495) 495-95-95</p>
+            </nav>
+            <div class="soc-sety">
+                <div class="wellow-line line  line-footer"></div>
+                <ul class="centr-nav-svz ul">
+                    <li ><a href=""><img class="cont-img-svz" src="svg\vk.svg"alt="VK"></a></li>
+                    <li><a href=""></a><img class="cont-img-svz" src="svg\instagram.svg"alt="Instagramm"></a></li>
+                    <li><a href=""><img class="cont-img-svz" src="svg\twitter.svg"alt="Twitter"></a></li>
+                </ul>
+                <div></div>
+            </div>
+        </div>
+</footer>
+    </body>
