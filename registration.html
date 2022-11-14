@@ -5,92 +5,85 @@
 <title>DEVISE</title>
 <link rel="stylesheet" href="style\normolize.css">
 <link rel="stylesheet" href="style\style.css">
-<link rel="stylesheet" href="style\authorization.css">
-<link rel="stylesheet" href="style\registration.css">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <div class="yellow-fon conteiner yellow-catalog"></div>
-    <header class="main-header conteiner registr-header"> 
-            <div class="logo-cont">
-                <a class="main-header-logo">
-                    <img src="svg\main-logo.svg" width height alt="Логотип предприятия">
-                </a> 
-                    <ul class="nav-ul main-nav">
-                        <li class="seahc-li" >
-                            <img src="svg\search.svg" alt="search">
-                            <a href class="search seahc-li">Поиск по сайту</a>
-                        </li>
-                    </ul>
-                    <nav class="header-2 nav nav-header">
-                            <ul class="header-nav-ul nav-ul">
-                                <li><a class="centr-nav-li nav-li-header" href="menu.html">Каталог товаров</a></li>
-                            </ul>
-                            <a class="open-full-nav">
-                                <img class="plus-svg" src="svg\plus.svg" width height alt="Открыть полное меню">
-                            </a> 
-                    </nav>
-                
-            </div>
-            <nav class="main-navigation nav">
-                <ul class="nav-ul main-nav">
-                    <li class="come-li">
-                        <img src="svg\user.svg" alt="user">
-                        <a href="authorization.html">Войти</a>
-                    </li>
-                    <li class="compare-li">
-                        <img src="svg\compare.svg" alt="compare">
-                        <a href="menu.html">Сравнить</a>
-                    </li>
-                    <li class="bascet-li">
-                        <img src="svg\cart.svg" alt="cart">
-                        <a href>Корзина</a>
-                    </li>
-                    
+<body>
+    <div class="yellow-fon conteiner yellow-catalog"></div>
+    <header class=" main-header header-catalog conteiner">
+        <div class="logo-cont">
+        <a class="main-header-logo" href="Web.html">
+            <img src="svg\main-logo.svg" width height alt="Логотип предприятия">
+        </a>
+        <ul class="nav-ul main-nav">
+            <li class="seahc-li" >
+                <img src="svg\search.svg" alt="search">
+                <a href class="search seahc-li">Поиск по сайту</a>
+            </li>
+        </ul>
+        <nav class="header-2 nav nav-header">
+                <ul class="header-nav-ul nav-ul">
+                    <li><a class="centr-nav-li nav-li-header"href="Web.html">Главная страница</a></li>
                 </ul>
-                <nav class="header-4 nav nav-header">
-                    <ul class="header-nav-ul nav-ul nav-ul-gred ul-header">
-                        <li><a class="centr-nav-li nav-li-header"href="Web.html">Доставка</a></li>
-                        <li><a class="centr-nav-li nav-li-header"href="Web.html">Гарантия</a></li>
-                        <div></div>
-                        <li><a class="centr-nav-li nav-li-header" href="kontact.html">Контакты</a></li>
-                    </ul>
-                </nav>
+                <a class="open-full-nav">
+                    <img class="plus-svg" src="svg\plus.svg" width height alt="Открыть полное меню">
+                </a> 
+        </nav>
+        </div>
+        <nav class="main-navigation nav">
+            <ul class="nav-ul main-nav">
+                <li class="come-li">
+                    <img src="svg\user.svg" alt="user">
+                    <a href="authorization.html">Войти</a>
+                </li>
+                <li class="compare-li">
+                    <img src="svg\compare.svg" alt="compare">
+                    <a href="Web.html">Сравнить</a>
+                </li>
+                <li class="bascet-li">
+                    <img src="svg\cart.svg" alt="cart">
+                    <a href>Корзина</a>
+                </li>
                 
+            </ul>
+            <nav class="header-4 nav nav-header">
+                <ul class="header-nav-ul nav-ul nav-ul-gred ul-header">
+                    <li><a class="centr-nav-li nav-li-header"href="Web.html">Доставка</a></li>
+                    <li><a class="centr-nav-li nav-li-header"href="Web.html">Гарантия</a></li>
+                    <div></div>
+                    <li><a class="centr-nav-li nav-li-header" href="kontact.html">Контакты</a></li>
+                </ul>
             </nav>
+        </nav>
     </header>
 
-    <main class="page-site">
-        <div class="wrapper-for-login-up">
-            <div class="label-log-up">
-                <p>Регистрация</p>
-            </div>
+    <main class="conteiner">
+        <div class="wrapper-form ">
 
-            <div class="l-login-password">
-                <input type="text" class="l-login-password-margin input" id="userFullName" placeholder="Введите ФИО" pattern="^[а-яА-Я\s-]+$" required> <!--Кириллица, пробелы, дефис |работает-->
-                <input type="text" class="l-login-password-margin input" id="userLogin" placeholder="Введите логин" required pattern="^[a-zA-Z]+$"> <!--Латиница "|работает-->
-                <input type="email" class="l-login-password-margin input" id="userEmail" placeholder="Введите email" maxlength="64" required>
-                <input type="password" class="l-login-password-margin" id="userPassword" placeholder="Введите пароль" required>
-                <input type="password" class="l-login-password-margin" id="userPassword" placeholder="Введите пароль повторно" required>
+            <form class="form-login">
+                <legend class="lgnd-form-login">Регистрация</legend>
+                <input type="text" class="input-login" id="userFullName" placeholder="Введите ФИО" pattern="^[а-яА-Я\s-]+$" required> <!--Кириллица, пробелы, дефис |работает-->
+                <input type="text" class="input-login" id="userLogin" placeholder="Введите логин" required pattern="^[a-zA-Z]+$"> <!--Латиница "|работает-->
+                <input type="email" class="input-login" id="userEmail" placeholder="Введите email" maxlength="64" required>
+                <input type="password" class="input-login" id="userPassword" placeholder="Введите пароль" maxlength="64" minlength="10" required>
+                <input type="password" class="input-login" id="userPassword" placeholder="Введите пароль повторно" maxlength="64" minlength="10" required>
                 <div>
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox" checked="checked" class="chk-true">
                     <label>Согласие на обработку персональных данных.</label>
                 </div>
-            </div>
-            
 
-            <div class="knopka-flex">
-                <button class="buton-classic">
-                    <div class="button-line">
-                        <a href="userroom.html"><p class="text-btn">Регистрация</p>
-                    </div>
-                </button>
-            </div>
-        
+                <div class="knopka-flex">
+                    <button class="buton-classic">
+                        <div class="button-line">
+                            <p class="text-btn">Регистрация</p>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
     </main>
     
     <footer class="main-footer ">
@@ -141,4 +134,5 @@
             </div>
         </div>
 </footer>
+
     </body>
