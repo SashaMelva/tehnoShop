@@ -10,7 +10,7 @@ $('.slider-servis').slick({
 });
     
 
-
+//
     
         /*Открыть модальное окно*/
          $('.js-open-modal').click(function(){
